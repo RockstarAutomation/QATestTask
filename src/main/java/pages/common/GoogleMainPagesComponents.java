@@ -3,13 +3,10 @@ package pages.common;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.common.GoogleMainPagesContainer;
 
 public abstract class GoogleMainPagesComponents extends GoogleMainPagesContainer {
-
 
 
     protected GoogleMainPagesComponents(WebDriver driver) {
@@ -18,75 +15,90 @@ public abstract class GoogleMainPagesComponents extends GoogleMainPagesContainer
 
 
     //Page object
-    private WebElement getAnotherGoogleServicesMainPagesComponent(){
+    private WebElement getAnotherGoogleServicesMainPagesComponent() {
 
         return driver.findElement(By.cssSelector("a[class=\"NQV3m\"]"));
     }
-    private WebElement getMyAccountMainPagesComponent(){
+
+    private WebElement getMyAccountMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Account')]"));
     }
 
-    private WebElement getSearchMainPagesComponent(){
+    private WebElement getSearchMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Search')]"));
     }
 
-    private WebElement getMapsMainPagesComponent(){
+    private WebElement getMapsMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Maps')]"));
     }
-    private WebElement getYouTubeMainPagesComponent(){
+
+    private WebElement getYouTubeMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'YouTube')]"));
     }
-    private WebElement getPlayMainPagesComponent(){
+
+    private WebElement getPlayMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Play')]"));
     }
-    private WebElement getPostOfficeMainPagesComponent(){
+
+    private WebElement getPostOfficeMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Gmail')]"));
     }
-    private WebElement getContactsMainPagesComponent(){
+
+    private WebElement getContactsMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Contacts')]"));
     }
-    private WebElement getTranslateMainPagesComponent(){
+
+    private WebElement getTranslateMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Translate')]"));
     }
-    private WebElement getCloudMainPagesComponent(){
+
+    private WebElement getCloudMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Drive')]"));
     }
-    private WebElement getCalendarMainPagesComponent(){
+
+    private WebElement getCalendarMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Calendar')]"));
     }
-    private WebElement getPhotoMainPagesComponent(){
+
+    private WebElement getPhotoMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Photos')]"));
     }
-    private WebElement getMoreDropDownMainPagesComponent(){
+
+    private WebElement getMoreDropDownMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='K1u0Zb']"));
     }
-    private WebElement getDocumentsMainPagesComponent(){
+
+    private WebElement getDocumentsMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Docs')]"));
     }
-    private WebElement getBloggerMainPagesComponent(){
+
+    private WebElement getBloggerMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Blogger')]"));
     }
-    private WebElement getDuoMainPagesComponent(){
+
+    private WebElement getDuoMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Duo')]"));
     }
-    private WebElement getHangoutsMainPagesComponent(){
+
+    private WebElement getHangoutsMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Hangouts')]"));
     }
-    private WebElement getGoogleKeepMainPagesComponent(){
+
+    private WebElement getGoogleKeepMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Keep')]"));
     }
-    private WebElement getJamboardMainPagesComponent(){
-        return  driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Jamboard')]"));
+
+    private WebElement getJamboardMainPagesComponent() {
+        return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Jamboard')]"));
     }
-    private WebElement getEarthMainPagesComponent(){
+
+    private WebElement getEarthMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Earth')]"));
     }
-    private WebElement getCollectionsMainPagesComponent(){
+
+    private WebElement getCollectionsMainPagesComponent() {
         return driver.findElement(By.xpath("//a[@class='tX9u1b']/span[contains(text(),'Collections')]"));
     }
-//    private WebElement get(){
-//        return ;
-//    }
 
 
     //Functionality

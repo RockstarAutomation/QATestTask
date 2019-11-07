@@ -1,10 +1,11 @@
 package tools;
+
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -14,8 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static com.sun.tools.attach.VirtualMachine.attach;
-
 public class Listener implements ITestListener {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private static ByteArrayOutputStream context;
@@ -24,7 +23,7 @@ public class Listener implements ITestListener {
     public void onTestStart(ITestResult result) {
         context = new ByteArrayOutputStream();
         contextPrint = new PrintStream(context, true);
-        logger.info(result.getName()+" started\n");
+        logger.info(result.getName() + " started\n");
 
     }
 

@@ -70,11 +70,12 @@ public abstract class TestRunner {
     }
 
     @Step
-    public SearchMainPageAsGuest loadBrowser(){
+    public SearchMainPageAsGuest loadBrowser() {
         driver.get(SERVER_URL);
         log.debug("go to chrome page start");
         return new SearchMainPageAsGuest(driver);
     }
+
     @Attachment
     private String takeScreenShot() throws IOException {
         String currentTime = new SimpleDateFormat(TIME_TEMPLATE).format(new Date());
@@ -96,7 +97,7 @@ public abstract class TestRunner {
         Path path = Paths.get(fileName + ".txt");
         byte[] strToBytes = pageSource.getBytes();
         try {
-            Files.write(path, strToBytes,  StandardOpenOption.CREATE);
+            Files.write(path, strToBytes, StandardOpenOption.CREATE);
         } catch (IOException e) {
             e.printStackTrace();
         }

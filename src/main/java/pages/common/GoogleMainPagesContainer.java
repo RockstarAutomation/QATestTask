@@ -15,16 +15,17 @@ public abstract class GoogleMainPagesContainer {
     private WebElement privacy;
     private WebElement terms;
 
-    protected GoogleMainPagesContainer(WebDriver driver){
+    protected GoogleMainPagesContainer(WebDriver driver) {
         this.driver = driver;
         initElements();
     }
 
-    protected GoogleMainPagesContainer(WebDriver driver, Boolean bool){
+    protected GoogleMainPagesContainer(WebDriver driver, Boolean bool) {
         this.driver = driver;
         initElements();
     }
-    private void initElements(){
+
+    private void initElements() {
         gmailLinkButton = driver.findElement(By.xpath("//div[@class='gb_h gb_i']/a[contains(text(),'Gmail')]"));
         imagesLinkButton = driver.findElement(By.xpath("//div[@class='gb_h gb_i']/a[contains(text(),'Images')]"));
         dropDownAllMainPages = driver.findElement(By.cssSelector("div[class=\"gb_C gb_gd gb_i\"] a"));
@@ -33,31 +34,32 @@ public abstract class GoogleMainPagesContainer {
     }
 
     //Page object
-    private WebElement getWebSignInButton(){
+    private WebElement getWebSignInButton() {
         return driver.findElement(By.cssSelector("div[class=\"gb_lg gb_i\"] a"));
     }
 
     //Functionality
-    public void clickGmailLinkButton(){
+    public void clickGmailLinkButton() {
         gmailLinkButton.click();
     }
 
-    public void clickImagesLinkButton(){
+    public void clickImagesLinkButton() {
         imagesLinkButton.click();
     }
 
-    public void clickDropDownAllMainPages(){
+    public void clickDropDownAllMainPages() {
         dropDownAllMainPages.click();
     }
 
-    public void clickPrivacy(){
+    public void clickPrivacy() {
         privacy.click();
     }
 
-    public void clickTerms(){
+    public void clickTerms() {
         terms.click();
     }
-    public void clickSingInButton(){
+
+    public void clickSingInButton() {
         getWebSignInButton().click();
     }
 

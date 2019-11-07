@@ -5,8 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.common.GoogleMainPagesComponentsGuest;
-import repository.Search;
-import repository.SearchRepository;
 
 public class SearchMainPageAsGuest extends GoogleMainPagesComponentsGuest {
 
@@ -88,14 +86,15 @@ public class SearchMainPageAsGuest extends GoogleMainPagesComponentsGuest {
 
     //Business logic
     @Step
-    public void searchByKeyBoard(String obj){
+    public void searchByKeyBoard(String obj) {
         clickSearchFieldMainPage();
         clearSearchFieldMainPage();
         setSearchFieldMainPage(obj);
         clickSearchInGoogleMainPage();
     }
+
     @Step
-    public void searchByVoice(){
+    public void searchByVoice() {
         clickSearchByVoiceMainPage();
         clickSearchInGoogleMainPage();
     }
