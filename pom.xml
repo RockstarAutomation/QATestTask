@@ -17,7 +17,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <org.projectlombok.version>1.18.8</org.projectlombok.version>
         <!-- - - - - - Test - - - - - -->
-        <org.testng.version>7.0.0</org.testng.version>
+        <org.testng.version>7.5.1</org.testng.version>
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
         <!-- - - - - - Automation - - - - - -->
         <org.seleniumhq.selenium.version>3.141.59</org.seleniumhq.selenium.version>
@@ -93,7 +93,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0</version>
+            <version>7.5.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
